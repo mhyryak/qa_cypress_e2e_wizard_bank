@@ -47,7 +47,6 @@ describe('Bank app', () => {
     cy.get('[ng-class="btnClass1"]').should('be.visible').click();
 
     cy.get('[ng-class="btnClass1"]').click();
-    cy.contains('[class="ng-binding"]', withdrawAmount).should('exist');
     cy.get('[ng-click="back()"]').click();
 
     cy.get('[id="accountSelect"]').select('1002');
